@@ -1,7 +1,7 @@
 bind = "127.0.0.1:8080"
 workers = 2
 accesslog = "/usr/local/var/log/gunicorn/django-pages-access.log"
-access_log_format = '%({x-forwarded-for}i)s %(h)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s" "%(D)s" "%(B)s"'
+access_log_format = '%({x-forwarded-for}i)s %(h)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s" %(D)s %(B)s'
 errorlog = "/usr/local/var/log/gunicorn/django-pages-error.log"
 loglevel = "debug"
 chdir = "/Users/harvey/Projects/pages"
